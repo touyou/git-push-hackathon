@@ -1,7 +1,7 @@
 ## Down
 [![Build Status](https://travis-ci.org/iwasrobbed/Down.svg?branch=master)](https://travis-ci.org/iwasrobbed/Down)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/iwasrobbed/Down/blob/master/LICENSE)
-[![CocoaPods](https://img.shields.io/cocoapods/v/Down.svg?maxAge=2592000)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/Down.svg?maxAge=10800)]()
 [![Swift 4](https://img.shields.io/badge/language-Swift-blue.svg)](https://swift.org)
 [![macOS](https://img.shields.io/badge/OS-macOS-orange.svg)](https://developer.apple.com/macos/)
 [![iOS](https://img.shields.io/badge/OS-iOS-orange.svg)](https://developer.apple.com/ios/)
@@ -10,7 +10,13 @@
 
 Blazing fast Markdown rendering in Swift, built upon [cmark](https://github.com/jgm/cmark).
 
-Is your app using it? [Let me know!](mailto:rob@robphillips.me)
+Is your app using it? [Let us know!](mailto:rob@robphillips.me)
+
+#### Maintainers
+
+- [Rob Phillips](https://github.com/iwasrobbed)
+- [Keaton Burleson](https://github.com/128keaton)
+- [Other contributors](https://github.com/iwasrobbed/Down/graphs/contributors) 🙌 
 
 ### Installation
 
@@ -27,6 +33,11 @@ Or [Carthage](https://github.com/Carthage/Carthage):
 ```
 github "iwasrobbed/Down"
 ```
+Due to limitations in Carthage regarding platform specification, you need to define the platform with Carthage. 
+
+e.g.
+
+```carthage update --platform iOS```
 
 Or manually install:
 
@@ -103,7 +114,9 @@ let commonMark = try? down.toCommonMark()
 
 // Convert to an attributed string
 let attributedString = try? down.toAttributedString()
-// NSAttributedString representation of the rendered HTML
+// NSAttributedString representation of the rendered HTML;
+// by default, uses a stylesheet that matches NSAttributedString's default font,
+// but you can override this by passing in your own, using the 'stylesheet:' parameter.
 
 // Convert to abstract syntax tree
 let ast = try? down.toAST()
@@ -154,19 +167,19 @@ Each protocol has options that will influence either rendering or parsing:
 /**
  Default options
 */
-public static let Default = DownOptions(rawValue: 0)
+public static let `default` = DownOptions(rawValue: 0)
 
 // MARK: - Rendering Options
 
 /**
  Include a `data-sourcepos` attribute on all block elements
 */
-public static let SourcePos = DownOptions(rawValue: 1 << 1)
+public static let sourcePos = DownOptions(rawValue: 1 << 1)
 
 /**
  Render `softbreak` elements as hard line breaks.
 */
-public static let HardBreaks = DownOptions(rawValue: 1 << 2)
+public static let hardBreaks = DownOptions(rawValue: 1 << 2)
 
 /**
  Suppress raw HTML and unsafe links (`javascript:`, `vbscript:`,
@@ -175,29 +188,29 @@ public static let HardBreaks = DownOptions(rawValue: 1 << 2)
  by a placeholder HTML comment. Unsafe links are replaced by
  empty strings.
 */
-public static let Safe = DownOptions(rawValue: 1 << 3)
+public static let safe = DownOptions(rawValue: 1 << 3)
 
 // MARK: - Parsing Options
 
 /**
  Normalize tree by consolidating adjacent text nodes.
 */
-public static let Normalize = DownOptions(rawValue: 1 << 4)
+public static let normalize = DownOptions(rawValue: 1 << 4)
 
 /**
  Validate UTF-8 in the input before parsing, replacing illegal
  sequences with the replacement character U+FFFD.
 */
-public static let ValidateUTF8 = DownOptions(rawValue: 1 << 5)
+public static let validateUTF8 = DownOptions(rawValue: 1 << 5)
 
 /**
  Convert straight quotes to curly, --- to em dashes, -- to en dashes.
 */
-public static let Smart = DownOptions(rawValue: 1 << 6)
+public static let smart = DownOptions(rawValue: 1 << 6)
 ```
 
 ### Supports
-Swift, ARC & iOS 8+
+Swift; iOS 9+, tvOS 9+, macOS 10.11+
 
 ### Markdown Specification
 
@@ -209,4 +222,4 @@ Please feel free to fork and create a pull request for bug fixes or improvements
 ### Credit
 This library is a wrapper around [cmark](https://github.com/jgm/cmark), which is built upon the [CommonMark](http://commonmark.org) Markdown specification. 
 
-[cmark](https://github.com/jgm/cmark) is Copyright (c) 2014, John MacFarlane. View [full license](https://github.com/jgm/cmark/blob/master/COPYING).
+[cmark](https://github.com/jgm/cmark) is Copyright (c) 2014 - 2017, John MacFarlane. View [full license](https://github.com/jgm/cmark/blob/master/COPYING).
