@@ -25,7 +25,18 @@ class GitMeRouter: NSObject {
         let loadingViewController = LoadingViewController.instantiate()
         loadingViewController.userInfo = userInfo
         newWindow.rootViewController = loadingViewController
-        newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        if #available(iOS 13.0, *) {
+            newWindow.backgroundColor = UIColor { (traitCollection: UITraitCollection) -> UIColor in
+                switch traitCollection.userInterfaceStyle {
+                case .unspecified, .light: return UIColor(white: 0, alpha: 0.6)
+                case .dark: return UIColor(white: 0.6, alpha: 0.6)
+                @unknown default:
+                    fatalError("Not compatible")
+                }
+            }
+        } else {
+            newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        }
         newWindow.windowLevel = UIWindow.Level.normal + 5
         newWindow.makeKeyAndVisible()
 

@@ -141,6 +141,7 @@ extension MainViewController: UITableViewDelegate {
         cell?.iconImageView.image = nil
         cell?.repoDescLabel.text = nil
         cell?.repoInfoLabel.text = nil
+        cell?.isShowReadme = false
         cell?.downView = nil
     }
 }
