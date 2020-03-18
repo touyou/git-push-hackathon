@@ -14,7 +14,7 @@ extension UserDefaults {
 
     func set(_ image: UIImage, forKey key: String) {
 
-        if let data = UIImagePNGRepresentation(image) {
+        if let data = image.pngData() {
 
             let filename = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(key + ".png")
             do {

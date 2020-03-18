@@ -132,6 +132,17 @@ extension MainViewController: UITableViewDelegate {
         }
     }
 
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        let cell = cell as? EventCardTableViewCell
+        cell?.eventLabel.attributedText = nil
+        cell?.timeLabel.text = nil
+        cell?.repoNameLabel.text = nil
+        cell?.iconImageView.image = nil
+        cell?.repoDescLabel.text = nil
+        cell?.repoInfoLabel.text = nil
+        cell?.downView = nil
+    }
 }
 
 // MARK: - Storyboard Instantiable

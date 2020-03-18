@@ -35,6 +35,7 @@ class MainConverter {
         return mutableAttributedString
     }
 
+    // swiftlint:disable function_body_length
     /// イベントに応じてメッセージをつくる。
     private func createMutableTemplate(of event: Event) -> [(String, NSMutableAttributedString.GitMeStyle)] {
 

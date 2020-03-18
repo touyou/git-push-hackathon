@@ -18,7 +18,7 @@ extension NSMutableAttributedString {
         case bold
     }
 
-    private var boldStyle: [NSAttributedStringKey: Any] {
+    private var boldStyle: [NSAttributedString.Key: Any] {
 
         return [.font: UIFont(name: "URWDIN-Demi", size: 14.0) ?? UIFont.boldSystemFont(ofSize: 14.0)]
     }

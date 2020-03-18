@@ -8,8 +8,7 @@
 
 import UIKit
 import RxSwift
-import PINCache
-import PINRemoteImage
+import Nuke
 import Down
 
 // MARK: - MainPresenterProtocol
@@ -121,7 +120,7 @@ extension MainPresenter {
         cell.eventLabel.attributedText = cellData[indexPath.row].eventTitle
         cell.timeLabel.text = cellData[indexPath.row].createAt.offsetString
         cell.repoNameLabel.text = cellData[indexPath.row].repositoryName
-        cell.iconImageView.pin_setImage(from: cellData[indexPath.row].iconUrl, placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        Nuke.loadImage(with: cellData[indexPath.row].iconUrl, options: ImageLoadingOptions(placeholder: #imageLiteral(resourceName: "placeholder")), into: cell.iconImageView)
         cell.repoDescLabel.text = cellData[indexPath.row].repositoryDescription
         cell.repoInfoLabel.text = cellData[indexPath.row].repositoryInfo
         cell.readmeUrl = cellData[indexPath.row].readmeUrl

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,15 +22,15 @@
             <rect key="frame" x="0.0" y="0.0" width="505" height="239"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="505" height="238.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="505" height="239"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXS-XF-EVJ">
-                        <rect key="frame" x="12" y="12" width="481" height="220.5"/>
+                        <rect key="frame" x="12" y="12" width="481" height="221"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-TF-634">
-                                <rect key="frame" x="28.5" y="44" width="440.5" height="1.5"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="29" y="44" width="440" height="1.5"/>
+                                <color key="backgroundColor" name="LightGray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1.5" id="VEW-P9-O8F"/>
                                 </constraints>
@@ -55,22 +54,22 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="touyou starred bitcoin/bitcoin aaa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llC-pv-VHL">
-                                <rect key="frame" x="51" y="9" width="182.5" height="36"/>
+                                <rect key="frame" x="51" y="11.5" width="184" height="33"/>
                                 <fontDescription key="fontDescription" name="URWDIN-Light" family="URW DIN" pointSize="14"/>
-                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" name="LightGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59 minutes ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFb-eo-ciV">
-                                <rect key="frame" x="369" y="27" width="100" height="18"/>
+                                <rect key="frame" x="369" y="27.5" width="100" height="16.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Lhs-mq-unL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="URWDIN-Light" family="URW DIN" pointSize="14"/>
-                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" name="LightGray"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="XrU-9R-22o">
-                                <rect key="frame" x="16" y="54" width="449" height="128.5"/>
+                                <rect key="frame" x="16" y="54" width="449" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="bitcoin/bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBU-Sr-Gw8">
                                         <rect key="frame" x="0.0" y="0.0" width="449" height="18"/>
@@ -82,13 +81,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beJ-4a-BcU">
-                                        <rect key="frame" x="0.0" y="19" width="449" height="93"/>
+                                        <rect key="frame" x="0.0" y="19" width="449" height="93.5"/>
                                         <fontDescription key="fontDescription" name="URWDIN-Light" family="URW DIN" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="repo info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5o0-Y4-RzQ">
-                                        <rect key="frame" x="0.0" y="113" width="449" height="15.5"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="449" height="15.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15.5" id="W1w-zf-dOO"/>
                                         </constraints>
@@ -99,25 +98,25 @@
                                 </subviews>
                             </stackView>
                             <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCm-fM-gZv">
-                                <rect key="frame" x="8" y="190.5" width="465" height="22"/>
+                                <rect key="frame" x="8" y="191" width="465" height="22"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch README" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnX-vZ-5ly">
-                                        <rect key="frame" x="8" y="3" width="96.5" height="16"/>
+                                        <rect key="frame" x="8" y="3" width="101.5" height="16"/>
                                         <fontDescription key="fontDescription" name="URWDIN-Light" family="URW DIN" pointSize="14"/>
-                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" name="LightGray"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCT-SF-MhO">
-                                        <rect key="frame" x="8" y="0.0" width="449" height="22"/>
+                                        <rect key="frame" x="8" y="0.0" width="449" height="24"/>
                                         <state key="normal" image="open_readme">
-                                            <color key="titleColor" red="0.1294117719" green="0.1294117719" blue="0.1294117719" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" name="LightGray"/>
                                         </state>
                                         <connections>
                                             <action selector="tapReadMe:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Sxc-Kh-Jrw"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DefaultBackground"/>
                                 <constraints>
                                     <constraint firstItem="QnX-vZ-5ly" firstAttribute="top" secondItem="WCm-fM-gZv" secondAttribute="top" constant="3" id="JOh-l0-7L0"/>
                                     <constraint firstAttribute="trailing" secondItem="HCT-SF-MhO" secondAttribute="trailing" constant="8" id="TUr-ZZ-fGn"/>
@@ -146,7 +145,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="DefaultBackground"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WCm-fM-gZv" secondAttribute="trailing" constant="8" id="1UG-Ea-K4S"/>
                             <constraint firstItem="eUm-TF-634" firstAttribute="top" secondItem="Vnj-jU-C9h" secondAttribute="bottom" constant="-2" id="APz-1O-rGf"/>
@@ -180,10 +179,13 @@
                             <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                 <size key="value" width="0.0" height="0.0"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" name="Black"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" name="DefaultBackground"/>
                 <constraints>
                     <constraint firstItem="tXS-XF-EVJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="VWp-fg-zb7"/>
                     <constraint firstItem="tXS-XF-EVJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="kfW-Ba-rkj"/>
@@ -206,6 +208,15 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="open_readme" width="19" height="12"/>
+        <image name="open_readme" width="19.5" height="12"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DefaultBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGray">
+            <color red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

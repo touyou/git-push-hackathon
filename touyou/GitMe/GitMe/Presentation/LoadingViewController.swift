@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import PINRemoteImage
-import PINCache
+import Nuke
 
 // MARK: - LoadingViewController
 
@@ -23,7 +22,8 @@ class LoadingViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
 
         loginNameLabel.text = "\(userInfo.userName ?? "unknown")でログインします"
-        loginIconImageView.pin_setImage(from: userInfo.iconUrl, placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        let options = ImageLoadingOptions(placeholder: #imageLiteral(resourceName: "placeholder"))
+        Nuke.loadImage(with: userInfo.iconUrl, options: options, into: loginIconImageView)
     }
 
     // MARK: Private

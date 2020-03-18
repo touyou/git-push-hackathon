@@ -6,7 +6,7 @@
 //  Copyright © 2018 touyou. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import OAuthSwift
 import RxSwift
 import RxCocoa
@@ -136,18 +136,18 @@ class GitHubAPI {
                 oauthSwift: self.oauthSwift
             )
 
-            let handle = self.oauthSwift.authorize(
-                withCallbackURL: URL(string: "gitme-ios://oauth-callback")!,
-                scope: "user,repo",
-                state: generateState(withLength: 20),
-                success: { credential, _, _ in
+            let handle = self.oauthSwift!.authorize(withCallbackURL: URL(string: "gitme-ios://oauth-callback")!, scope: "user,repo", state: generateState(withLength: 20), completionHandler: { result in
+
+                switch result {
+                case .success(let credential, _, _):
 
                     self.cache.set(credential.oauthToken, forKey: DefaultKeys.oauthKey.rawValue)
                     observer.onNext(self.fetchUser())
                     observer.onCompleted()
-            }, failure: { error in
-
-                observer.onError(error)
+                case .failure(let error):
+                    
+                    observer.onError(error)
+                }
             })
 
             return Disposables.create {

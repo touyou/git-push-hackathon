@@ -28,7 +28,7 @@ extension StoryboardInstantiable where Self: UIViewController {
 
         guard let controller = storyboard.instantiateInitialViewController() as? Self else {
 
-            assert(false, "Not Found \(storyboardName).swift.")
+            fatalError("Not Found \(storyboardName).swift.")
         }
 
         return controller

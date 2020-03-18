@@ -8,8 +8,7 @@
 
 import UIKit
 import RxSwift
-import PINCache
-import PINRemoteImage
+import Nuke
 
 // MARK: - SettingsPresenterProtocol
 
@@ -61,7 +60,11 @@ extension SettingsPresenter {
 
         let cell: UserInfoTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
 
-        cell.iconImageView.pin_setImage(from: userInfo?.iconUrl, placeholderImage: #imageLiteral(resourceName: "placeholder"))
+        if let iconUrl = userInfo?.iconUrl {
+            Nuke.loadImage(with: iconUrl, options: ImageLoadingOptions(placeholder: #imageLiteral(resourceName: "placeholder")), into: cell.iconImageView)
+        } else {
+            cell.iconImageView.image = #imageLiteral(resourceName: "placeholder")
+        }
         cell.userNameLabel.text = userInfo?.userName
 
         return cell

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,11 +24,16 @@
 		46537395202D8929002279BD /* GitMeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46537394202D8929002279BD /* GitMeRouter.swift */; };
 		4653739A202D89EC002279BD /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46537398202D89EC002279BD /* LoadingViewController.swift */; };
 		4653739D202D8A83002279BD /* LoadingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4653739C202D8A83002279BD /* LoadingViewController.storyboard */; };
-		46611592203C3AF0006027CC /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46611591203C3AEF006027CC /* Down.framework */; };
 		46611595203C5596006027CC /* EventCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46611593203C5596006027CC /* EventCardTableViewCell.swift */; };
 		46611596203C5596006027CC /* EventCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46611594203C5596006027CC /* EventCardTableViewCell.xib */; };
 		4671021A202C287C007D86A8 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46710219202C287C007D86A8 /* UIColor+Extensions.swift */; };
 		46710220202C4C7E007D86A8 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671021F202C4C7E007D86A8 /* Date+Extensions.swift */; };
+		46831E612421CC2600C03EDD /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 46831E602421CC2600C03EDD /* RxRelay */; };
+		46831E632421CC2600C03EDD /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 46831E622421CC2600C03EDD /* RxSwift */; };
+		46831E652421CC2600C03EDD /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 46831E642421CC2600C03EDD /* RxCocoa */; };
+		46831E682421CC7800C03EDD /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 46831E672421CC7800C03EDD /* OAuthSwift */; };
+		46831E6B2421CCF900C03EDD /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = 46831E6A2421CCF900C03EDD /* Down */; };
+		46831E6E2421CD1300C03EDD /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 46831E6D2421CD1300C03EDD /* Nuke */; };
 		4695C953200DAC3E0097F066 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695C952200DAC3E0097F066 /* AppDelegate.swift */; };
 		4695C958200DAC3E0097F066 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4695C956200DAC3E0097F066 /* MainViewController.storyboard */; };
 		4695C95A200DAC3E0097F066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4695C959200DAC3E0097F066 /* Assets.xcassets */; };
@@ -45,10 +50,7 @@
 		469722FD200E4263008325C4 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469722FC200E4263008325C4 /* UITableView+Extensions.swift */; };
 		469722FF200E4453008325C4 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469722FE200E4453008325C4 /* UICollectionView+Extensions.swift */; };
 		46972301200E44CD008325C4 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46972300200E44CD008325C4 /* UIApplication+Extensions.swift */; };
-		46A58CA32039B139008D6DB9 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A58CA12039B139008D6DB9 /* PINRemoteImage.framework */; };
-		46A58CA42039B139008D6DB9 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A58CA22039B139008D6DB9 /* PINCache.framework */; };
 		46A58CA62039BBCB008D6DB9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A58CA52039BBCB008D6DB9 /* Repository.swift */; };
-		46AB03912015C0950003AD21 /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AB03902015C0950003AD21 /* OAuthSwift.framework */; };
 		46AB03952015C74A0003AD21 /* LoginViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB03942015C74A0003AD21 /* LoginViewPresenter.swift */; };
 		46AB03972015C7A60003AD21 /* LoginConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB03962015C7A60003AD21 /* LoginConverter.swift */; };
 		46AB039A2015CA910003AD21 /* LoginContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB03992015CA910003AD21 /* LoginContainer.swift */; };
@@ -58,8 +60,6 @@
 		46B2EEC82043B9A20075F83F /* SettingsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2EEC72043B9A20075F83F /* SettingsConverter.swift */; };
 		46B2EECA2043BB7A0075F83F /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2EEC92043BB790075F83F /* UIAlertController+Extensions.swift */; };
 		46B2EECC2043E32D0075F83F /* UITabBarController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2EECB2043E32D0075F83F /* UITabBarController+Extensions.swift */; };
-		46BF3B45200DB924003C2EAE /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF3B43200DB924003C2EAE /* RxSwift.framework */; };
-		46BF3B46200DB924003C2EAE /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BF3B44200DB924003C2EAE /* RxCocoa.framework */; };
 		46DA6D082015925E00767CCB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA6D072015925E00767CCB /* LoginViewController.swift */; };
 		46DA6D0A2015927D00767CCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA6D092015927D00767CCB /* MainViewController.swift */; };
 		46DA6D0C2015928E00767CCB /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA6D0B2015928E00767CCB /* LoginViewController.storyboard */; };
@@ -149,6 +149,7 @@
 		46B2EECB2043E32D0075F83F /* UITabBarController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extensions.swift"; sourceTree = "<group>"; };
 		46BF3B43200DB924003C2EAE /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		46BF3B44200DB924003C2EAE /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		46BFE6482421BE69009F0A55 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		46DA6D072015925E00767CCB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		46DA6D092015927D00767CCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		46DA6D0B2015928E00767CCB /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
@@ -167,12 +168,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46611592203C3AF0006027CC /* Down.framework in Frameworks */,
-				46A58CA32039B139008D6DB9 /* PINRemoteImage.framework in Frameworks */,
-				46A58CA42039B139008D6DB9 /* PINCache.framework in Frameworks */,
-				46AB03912015C0950003AD21 /* OAuthSwift.framework in Frameworks */,
-				46BF3B45200DB924003C2EAE /* RxSwift.framework in Frameworks */,
-				46BF3B46200DB924003C2EAE /* RxCocoa.framework in Frameworks */,
+				46831E632421CC2600C03EDD /* RxSwift in Frameworks */,
+				46831E682421CC7800C03EDD /* OAuthSwift in Frameworks */,
+				46831E652421CC2600C03EDD /* RxCocoa in Frameworks */,
+				46831E612421CC2600C03EDD /* RxRelay in Frameworks */,
+				46831E6B2421CCF900C03EDD /* Down in Frameworks */,
+				46831E6E2421CD1300C03EDD /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +399,7 @@
 		46BF3B42200DB924003C2EAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46BFE6482421BE69009F0A55 /* PINOperation.framework */,
 				46611591203C3AEF006027CC /* Down.framework */,
 				46A58CA22039B139008D6DB9 /* PINCache.framework */,
 				46A58CA12039B139008D6DB9 /* PINRemoteImage.framework */,
@@ -432,13 +434,20 @@
 				4695C94C200DAC3E0097F066 /* Frameworks */,
 				4695C94D200DAC3E0097F066 /* Resources */,
 				46BF3B3F200DAE36003C2EAE /* ShellScript */,
-				46BF3B40200DB7D7003C2EAE /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GitMe;
+			packageProductDependencies = (
+				46831E602421CC2600C03EDD /* RxRelay */,
+				46831E622421CC2600C03EDD /* RxSwift */,
+				46831E642421CC2600C03EDD /* RxCocoa */,
+				46831E672421CC7800C03EDD /* OAuthSwift */,
+				46831E6A2421CCF900C03EDD /* Down */,
+				46831E6D2421CD1300C03EDD /* Nuke */,
+			);
 			productName = GitMe;
 			productReference = 4695C94F200DAC3E0097F066 /* GitMe.app */;
 			productType = "com.apple.product-type.application";
@@ -487,20 +496,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = touyou;
 				TargetAttributes = {
 					4695C94E200DAC3E0097F066 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 					4695C962200DAC3E0097F066 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4695C94E200DAC3E0097F066;
 					};
 					4695C96D200DAC3E0097F066 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4695C94E200DAC3E0097F066;
 					};
@@ -515,6 +527,12 @@
 				Base,
 			);
 			mainGroup = 4695C946200DAC3E0097F066;
+			packageReferences = (
+				46831E5F2421CC2600C03EDD /* XCRemoteSwiftPackageReference "RxSwift" */,
+				46831E662421CC7800C03EDD /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+				46831E692421CCF900C03EDD /* XCRemoteSwiftPackageReference "Down" */,
+				46831E6C2421CD1300C03EDD /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 4695C950200DAC3E0097F066 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -575,26 +593,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		46BF3B40200DB7D7003C2EAE /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Down.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		46BF3B41200DB89C003C2EAE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -728,6 +727,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -735,6 +735,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -785,6 +786,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -792,6 +794,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -816,7 +819,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -826,16 +830,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = B4S4333JDW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GitMe/SupportFiles/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GitMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -845,16 +854,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.0;
 				DEVELOPMENT_TEAM = B4S4333JDW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GitMe/SupportFiles/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GitMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -867,10 +881,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4S4333JDW;
 				INFOPLIST_FILE = GitMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GitMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitMe.app/GitMe";
 			};
@@ -884,10 +902,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4S4333JDW;
 				INFOPLIST_FILE = GitMeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GitMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GitMe.app/GitMe";
 			};
@@ -900,10 +922,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4S4333JDW;
 				INFOPLIST_FILE = GitMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GitMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GitMe;
 			};
@@ -916,10 +942,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4S4333JDW;
 				INFOPLIST_FILE = GitMeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.touyou.GitMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GitMe;
 			};
@@ -965,6 +995,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46831E5F2421CC2600C03EDD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		46831E662421CC7800C03EDD /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		46831E692421CCF900C03EDD /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iwasrobbed/Down";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+		46831E6C2421CD1300C03EDD /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46831E602421CC2600C03EDD /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46831E5F2421CC2600C03EDD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		46831E622421CC2600C03EDD /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46831E5F2421CC2600C03EDD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		46831E642421CC2600C03EDD /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46831E5F2421CC2600C03EDD /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		46831E672421CC7800C03EDD /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46831E662421CC7800C03EDD /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+		46831E6A2421CCF900C03EDD /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46831E692421CCF900C03EDD /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+		46831E6D2421CD1300C03EDD /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46831E6C2421CD1300C03EDD /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4695C947200DAC3E0097F066 /* Project object */;
 }

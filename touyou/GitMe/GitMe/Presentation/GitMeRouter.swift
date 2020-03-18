@@ -26,7 +26,7 @@ class GitMeRouter: NSObject {
         loadingViewController.userInfo = userInfo
         newWindow.rootViewController = loadingViewController
         newWindow.backgroundColor = UIColor(white: 0, alpha: 0.6)
-        newWindow.windowLevel = UIWindowLevelNormal + 5
+        newWindow.windowLevel = UIWindow.Level.normal + 5
         newWindow.makeKeyAndVisible()
 
         objc_setAssociatedObject(UIApplication.shared, &GitMeRouter.kAssocKeyWindow, newWindow, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
